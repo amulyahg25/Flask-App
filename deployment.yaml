@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pythonapp
+  name: flaskapp
   labels:
-    app: pythonapp
+    app: flaskapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pythonapp
+      app: flaskapp
   template:
     metadata:
       labels:
-        app: pythonapp
+        app: flaskapp
     spec:
       containers:
-      - name: pythonapp
-        image: amulya2503/python:v1
+      - name: flaskapp
+        image: amulya2503/python:latest
         ports:
         - containerPort: 5070
