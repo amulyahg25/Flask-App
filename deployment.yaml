@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: pythonapp
-        image: amulya/python:v1
+        image: amulya2503/python:v1
         ports:
         - containerPort: 5070
